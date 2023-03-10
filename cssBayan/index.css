@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 15px;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 5px;
+  background-color: #e6e7f3;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.banner {
+  background-color: #e5e5e5;
+}
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header {
+  padding: 15px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header-title {
+  font-family: Roboto;
+}
+
+.main {
+  font-family: Roboto;
+  padding: 15px 0;
+
+}
+
+/* main.main h3.section-title {
+ color: rgb(95, 51, 214);
+} */
+
+main.main:hover h3.section-title  {
+  color: rgb(0, 0, 0);
+}
+
+main.main:hover .btn-active  {
+  display: block;
+} 
+
+.section {
+  padding: 15px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  color: rgb(95, 51, 214);
+}
+
+.btn {
+  background-image: url(../cssBayan/images/png/open.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.btn-active {
+  display: none;
+}
+
+.section-img {
+  display: none;
+}
