@@ -35,48 +35,99 @@
 }
 
 .main {
-  font-family: Roboto;
   padding: 15px 0;
-
+  cursor: pointer;
 }
 
-/* main.main h3.section-title {
- color: rgb(95, 51, 214);
-} */
-
-main.main:hover h3.section-title  {
-  color: rgb(0, 0, 0);
+main.main:hover .section-title {
+  color: #000000;
 }
 
-main.main:hover .btn-active  {
+main.main:hover  label.section-title:after  {
   display: block;
 } 
 
 .section {
   padding: 15px 0;
   border-bottom: 2px solid #ffffff;
+  cursor: pointer;
 }
 
-.section-wrapper {
+.section:active {
+  opacity: 0.5;
+}
+
+.content__img_label {
+  cursor: pointer;
+}
+
+
+.section-title {
+  color: #127cee;
+  font-family: Roboto;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all .3s ;
   display: flex;
   justify-content: space-between;
 }
 
-.section-title {
-  color: rgb(95, 51, 214);
-}
-
-.btn {
-  background-image: url(../cssBayan/images/png/open.png);
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-}
-
-.btn-active {
+input[name='panel'] {
   display: none;
 }
 
-.section-img {
+label.section-title:after {
   display: none;
+  content: url(../cssBayan/images/png/open.png);
+  text-align: center;
+  border-radius: 50%;  
+}
+
+input:checked + label.section-title:after {
+  content: url(../cssBayan/images/svg/svgbl.svg);   
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0em;
+  padding: 0 1.5em;
+  transition: all .9s cubic-bezier(0.865, 0.140, 0.095, 0.870);
+  text-align: center;
+  /* display: none; */
+  transform: scale(0.9);
+}
+
+.content__img {
+  cursor: pointer;
+  /* transition: all .6s cubic-bezier(0.865, 0.140, 0.095, 0.870); */
+  /* height: 300px; */
+  /* overflow: hidden; */
+  /* width: 300px; */
+  /* transform: scale(1.2); */
+}
+
+  
+input[name='panel']:checked ~ .accordion__content {
+  max-height: 50em;
+  /* display: block; */
+}
+
+input[name='panel']:checked ~ .section-title {
+  color: #000000;
+}
+
+.section:hover .accordion__content { 
+  max-height: 50em;
+  /* display: block;  */
+} 
+
+.section:hover label.section-title:after {
+  content: url(../cssBayan/images/svg/svgbl.svg);
+}
+
+.section:active label.section-title {
+  color: #127cee;
+}
+.section:active label.section-title:after {
+  content: url(../cssBayan/images/svg/svgblue.svg);   
 }
