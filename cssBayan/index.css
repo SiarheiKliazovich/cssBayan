@@ -89,7 +89,6 @@ main.main:hover  label.section-title:after  {
   cursor: pointer;
 }
 
-
 .section-title {
   color: #127cee;
   font-family: Roboto;
@@ -147,7 +146,6 @@ input:checked + label.section-title:after {
     width: 100%;
   } 
 }
-
   
 input[name='panel']:checked ~ .accordion__content {
   max-height: 50em;
@@ -173,4 +171,22 @@ input[name='panel']:checked ~ .section-title {
 }
 .section:active label.section-title:after {
   content: url(../cssBayan/images/svg/svgblue.svg);   
+}
+
+.footer {
+  padding: 1.25em 0;
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  text-align: right;
+}
+
+.img-link {
+  width: 35%;
 }
